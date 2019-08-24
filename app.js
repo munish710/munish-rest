@@ -39,7 +39,7 @@ app.use(
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', "https://munish-social.netlify.com/","*");
+  res.setHeader('Access-Control-Allow-Origin', "https://munish-social.netlify.com","*");
   res.setHeader(
     'Access-Control-Allow-Methods',
     'OPTIONS, GET, POST, PUT, PATCH, DELETE'
